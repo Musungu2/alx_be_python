@@ -6,20 +6,20 @@ class TestSimpleCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
 
     def test_addition(self):
-        self.assertEqual(SimpleCalculator.add(1, 2), 3)
+        self.assertEqual(self.calc.add(1, 2), 3)
 
     def test_subtraction(self):
-        self.assertEqual(SimpleCalculator.subtract(3, 2), 1)
+        self.assertEqual(self.calc.subtract(3, 2), 1)
 
     def test_multiply(self):
-        self.assertEqual(SimpleCalculator.multiply(2, 3), 6)
+        self.assertEqual(self.calc.multiply(2, 3), 6)
 
     def test_divide(self):
-        self.assertEqual(SimpleCalculator.divide(6, 2), 3)
+        self.assertEqual(self.calc.divide(6, 2), 3)
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            SimpleCalculator.divide(5, 0)
+            self.calc.divide(5, 0)
 
 if __name__ == '__main__':
     unittest.main()
