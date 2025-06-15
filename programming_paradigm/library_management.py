@@ -14,7 +14,7 @@ class Book:
         return self.__is_checked_out
 
 class Library:
-    def__init__(self):
+    def __init__(self):
         self.__books = []
 
     def add_book(self, book):
