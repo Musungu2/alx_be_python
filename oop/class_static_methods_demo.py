@@ -9,6 +9,5 @@ class Calculator:
     @classmethod
     def multiply(cls, a, b):
         print(cls.calculation_type)
-        c = a * b
-        return c
+        return a * b
 
